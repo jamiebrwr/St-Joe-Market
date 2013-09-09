@@ -1,0 +1,266 @@
+/*
+Theme Name: St. Joe Swap-and-Shop
+Description: Child theme for Hustle
+Author: Jamie Brewer
+Author URI: http://brewerjwebdesign.com
+Version: 1.0
+Template: hustle
+*/
+
+@import url("../hustle/style.css");
+
+/*-----------------------------------------------------------------------------------*/
+/* Defaults */
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Header */
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Homepage */
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Content */
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Posts */
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/* Single Post - single.php */
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Sidebar */
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Footer */
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 404 - Not Registered */
+/*-------------------------------------------------------------------------------------------*/
+.register-notice {
+	text-align: center;
+	font-size: 2em;
+}
+.register-notice p span {
+	text-align: center;
+	font-size: 0.5em;
+	font-style: italic;
+}
+#main .register-notice header h1 {
+	margin-right: 0em;
+}
+/*-------------------------------------------------------------------------------------------*/
+/* Woocommerce */
+/*-------------------------------------------------------------------------------------------*/
+ul.products li.product:hover li.details,
+ul.products li.product:hover li.price,
+ul.products li.product:hover li.cart,
+form.cart {
+	display:none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Plugins */
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Media Queries */
+/*-------------------------------------------------------------------------------------------*/
+
+/*
+	-- LANDSCAPE --
+	iPad 3 Retnia Display
+	iPad 4 Retnia Display
+	
+	<link type="text/css" rel="stylesheet" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2)" href="/wp-content/themes/THEME/iPad-Retnia-Display.css" />
+	
+	/*
+	-- PORTRAIT & LANDSCAPE --
+	iPad 3 Retnia Display
+	iPad 4 Retnia Display
+*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+	/*
+		-- PORTRAIT --
+		iPad 3 Retnia Display
+		iPad 4 Retnia Display
+	*/	
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {}
+	
+	
+	
+	/*
+		-- LANDSCAPE --
+		iPad 3 Retnia Display
+		iPad 4 Retnia Display
+	*/	
+	
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {}
+	
+	
+/*-------------------------------------------------------------------------------------------*/
+/* iPads */
+/*-------------------------------------------------------------------------------------------*/
+
+/*
+	-- PORTRAIT & LANDSCAPE --
+	iPad 1
+	iPad 2
+	iPad 2.5
+	iPad Mini
+*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {}
+
+	/*
+		-- LANDSCAPE --
+		iPad 1
+		iPad 2
+		iPad 2.5
+		iPad Mini
+	*/
+	@media only screen and (min-width:768px) and (max-width: 1024px) and (orientation: landscape) {}
+	
+	/*
+		-- PORTRAIT --
+		iPad 1
+		iPad 2
+		iPad 2.5
+		iPad Mini
+	*/
+	@media only screen and (min-width:768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {}
+	
+
+/*
+	-- PORTRAIT & LANDSCAPE --
+	iPad 1
+	iPad 2
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){}
+	
+	/*
+		-- PORTRAIT --
+		iPad 1
+		iPad 2
+	*/	
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : portrait) 
+	and (-webkit-min-device-pixel-ratio: 1) {}
+
+	/*
+		-- LANDSCAPE --
+		iPad 1
+		iPad 2
+	*/
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : landscape)
+	and (-webkit-min-device-pixel-ratio: 1)  {}
+
+/*
+	Desktops, laptops and iPads (landscape)
+*/
+
+@media only screen and (max-width: 1024px)and (min-device-width : 768px) {}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* iPhones */
+/*-------------------------------------------------------------------------------------------*/
+
+/*----------------------------
+	-- PORTRAIT & LANDSCAPE --
+	iPhone 3g
+	iPhone 4
+	iPhne 4S
+----------------------------*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {}
+
+	/*
+		-- LANDSCAPE --
+		iPhone 3g
+		iPhone 4
+		iPhne 4S
+	*/
+	@media only screen and (min-width : 321px) and (max-width: 480px) and (orientation: landscape) {}
+	
+	/*
+		-- PORTRAIT --
+		iPhone 3g
+		iPhone 4
+		iPhne 4S
+		(portrait)
+	*/
+	@media only screen and (max-width: 480px) and (orientation: portrait) {} 
+
+
+
+
+/*----------------------------
+	-- PORTRAIT & LANDSCAPE --
+	iPhone 5
+----------------------------*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {}
+
+	/*
+		-- LANDSCAPE --
+		iPhone 5
+	*/
+	@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+	
+	/*
+		-- PORTRAIT --
+		iPhone 5
+	*/
+	@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+
+
+
+
+
+
+
+
+
+
