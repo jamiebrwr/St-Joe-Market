@@ -12,8 +12,82 @@ Template: hustle
 /*-----------------------------------------------------------------------------------*/
 /* Defaults */
 /*-----------------------------------------------------------------------------------*/
+/* Helper Classes */
+.fix {
+	clear:both;
+}
+hr {
+	margin: 1.618em 0 1.618em 0;
+	clear: both;
+}
+.alignleft {
+	float: left;
+}
 
+.alignright {
+	float: right;
+}
 
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Images */
+img.alignleft {
+	margin: 5px 30px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+.image-holder {
+	margin-bottom: 2em;
+}
+a.post-delete-link {
+	display: inline-block;
+	padding: .382em 1.618em;
+	border: none;
+	color: white!important;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1em;
+	font-family: inherit;
+	cursor: pointer;
+	overflow: visible;
+	width: auto;
+	line-height: 1.618em;
+	background: #de1e1e;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 300px;
+	border-radius: 300px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+a.post-delete-link:hover {
+	background: #d11d1d;
+}
 /*-----------------------------------------------------------------------------------*/
 /* Header */
 /*-----------------------------------------------------------------------------------*/
@@ -39,6 +113,42 @@ Template: hustle
 /*-------------------------------------------*/
 
 
+/*-------------------------------------------------------------------------------------------*/
+/* Archives */
+/*-------------------------------------------------------------------------------------------*/
+body.author .archive-header {
+	margin: 0 0 1.631em;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Authors */
+/*-------------------------------------------------------------------------------------------*/
+body.author #header {
+	margin: 0 auto 1.854em;
+}
+body.author #breadcrumbs {
+	display: none;
+}
+.author-avatar {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+.author-avatar img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 3.631em;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	box-shadow: 0 0 0 5px #e5e5e5;
+	-webkit-box-shadow: 0 0 0 5px #e5e5e5;
+}
+img.author-archive-post-thumb {
+	box-shadow: 0 0 0 5px #e5e5e5;
+	-webkit-box-shadow: 0 0 0 5px #e5e5e5;
+}
 /*-------------------------------------------------------------------------------------------*/
 /* Sidebar */
 /*-------------------------------------------------------------------------------------------*/

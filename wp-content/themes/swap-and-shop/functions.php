@@ -1,4 +1,31 @@
 <?php
+
+/*-----------------------------------------------------------------------------------*/
+/* Start WooThemes Functions - Please refrain from editing this section */
+/*-----------------------------------------------------------------------------------*/
+
+// Set path to WooFramework and theme specific functions
+$functions_path = STYLESHEETPATH . '/functions/';
+$includes_path = STYLESHEETPATH . '/includes/';
+
+// WooFramework
+//require_once ($functions_path . 'admin-init.php');			// Framework Init
+
+// Theme specific functionality
+//require_once ($includes_path . 'theme-options.php'); 			// Options panel settings and custom settings
+require_once ($includes_path . 'image-sizes.php'); 				// Register custom image sizes
+//require_once ($includes_path . 'theme-functions.php'); 		// Custom theme functions
+//require_once ($includes_path . 'theme-plugins.php');			// Theme specific plugins integrated in a theme
+//require_once ($includes_path . 'theme-actions.php');			// Theme actions & user defined hooks
+//require_once ($includes_path . 'theme-comments.php'); 		// Custom comments/pingback loop
+//require_once ($includes_path . 'theme-js.php');				// Load javascript in wp_head
+//require_once ($includes_path . 'sidebar-init.php');			// Initialize widgetized areas
+//require_once ($includes_path . 'theme-widgets.php');			// Theme widgets
+
+/*-----------------------------------------------------------------------------------*/
+/* You can add custom functions below */
+/*-----------------------------------------------------------------------------------*/
+
 function pippin_create_post_form() {
 	ob_start(); 
 	if(isset($_GET['post'])) {
@@ -221,3 +248,15 @@ function ounce_add_term_to_post($taxonomy = "categories", $term_id, $post_id) {
     }
 
 }
+
+/*-------------------------------------------------------------------------------------------*/
+/* Add Custom Post Types to Author Archives Page in WordPress
+ *
+ *@link http://isabelcastillo.com/add-custom-post-types-to-author-archives-wordpress
+/*-------------------------------------------------------------------------------------------*/
+function custom_post_author_archive($query) {
+    if ($query->is_author)
+        $query->set( 'post_type', array('product') );
+    remove_action( 'pre_get_posts', 'custom_post_author_archive' );
+}
+add_action('pre_get_posts', 'custom_post_author_archive');
