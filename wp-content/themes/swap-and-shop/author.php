@@ -54,12 +54,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<!--
-<?php if ($post->post_author == $current_user->ID) { ?>
-				<p><a class="button" href="#">Delete Listing</a></p>
-				<div class="fix" style="margin-bottom:3em;"></div>
-				<?php } ?>
--->
 				<?php get_template_part( 'partials/content', 'author' ); ?>
 			<?php endwhile; ?>
 

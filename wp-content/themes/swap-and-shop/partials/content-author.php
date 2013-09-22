@@ -5,9 +5,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 
 	global $woo_options;
-	global $current_user;
-	get_currentuserinfo();
- 
 ?>
 
 	<article <?php post_class(); ?>>
@@ -39,17 +36,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		<footer class="post-more">      
 		<?php if ( isset( $woo_options['woo_post_content'] ) && $woo_options['woo_post_content'] == 'excerpt' ) { ?>
 			<span class="read-more"><a class="button small" href="<?php the_permalink(); ?>" title="<?php esc_attr_e( 'View Post &rarr;', 'woothemes' ); ?>"><?php _e( 'View Post &rarr;', 'woothemes' ); ?></a></span>
-			
-			
-			
-			<?php if ($post->post_author == $current_user->ID) { ?>
-			<a class="button small post-delete-link" href="<?php echo get_delete_post_link( $post->ID ) ?>">Delete Post &rarr;</a>
-			<?php } ?>
-			
-			
-			<?php// edit_post_link( __( 'Edit Your Post &rarr;', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
-
-		
 		<?php } ?>
 		
 		

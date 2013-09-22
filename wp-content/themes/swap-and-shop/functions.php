@@ -260,3 +260,17 @@ function custom_post_author_archive($query) {
     remove_action( 'pre_get_posts', 'custom_post_author_archive' );
 }
 add_action('pre_get_posts', 'custom_post_author_archive');
+
+
+
+/* Remove Admin Bar for everyonw except Administrator */
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+	  show_admin_bar(false);
+	}
+}
+
+
+

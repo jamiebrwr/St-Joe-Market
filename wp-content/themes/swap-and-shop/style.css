@@ -88,6 +88,10 @@ a.post-delete-link {
 a.post-delete-link:hover {
 	background: #d11d1d;
 }
+
+#top ul.nav > li.current_page_item a, #top ul.nav > li.current_page_parent a, #top ul.nav > li.current-menu-ancestor a, #top ul.nav > li.current-cat a, #top ul.nav > li.li.current-menu-item a {
+	color: red !important;
+}
 /*-----------------------------------------------------------------------------------*/
 /* Header */
 /*-----------------------------------------------------------------------------------*/
@@ -183,13 +187,34 @@ ul.products li.product:hover li.cart,
 form.cart {
 	display:none;
 }
-
+.entry-summary span.amount {
+	color:#00c809;
+}
 /*-------------------------------------------------------------------------------------------*/
 /* Plugins */
 /*-------------------------------------------------------------------------------------------*/
-
-
-
+input[type="text"], input.input-text, textarea, input.txt, input[type="tel"], input[type="email"], input[type="password"] {
+padding: .236em 7em;
+}
+input[type="password"] {
+-webkit-border-radius: 300px;
+border-radius: 300px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 1px solid 
+#e5e5e5;
+font-size: 1em;
+line-height: 1.618em;
+font-family: inherit;
+outline: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.widget_pw_login_widget {
+	margin-bottom: 1em !important;
+}
 
 /*-------------------------------------------------------------------------------------------*/
 /* Media Queries */

@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 /**
- * Template Name: Register Prompt
+ * Template Name: My Account
  *
  * This template is a full-width version of the page.php template file. It removes the sidebar area.
  *
@@ -10,12 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 	get_header();
 	global $woo_options;
-?>
-   <style>
-   	#breadcrumbs {
-	   	display: none;
-   	}
-   </style>    
+?>   
     <div id="content" class="page col-full">
     
     	<?php woo_main_before(); ?>
